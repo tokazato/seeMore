@@ -1,0 +1,86 @@
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.main__parent__boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 50%;
+  height: 2000px;
+}
+
+.boxs__1 {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  position: fixed;
+}
+
+.boxs__2 {
+  height: 1000px;
+  width: 400px;
+}
+
+.boxs__2__sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100px;
+  height: 100px;
+  background: purple;
+  top: 8px;
+}
+
+.text__box {
+  width: 300px;
+}
+
+.text__box__content {
+  position: relative;
+  padding-right: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.text__box__moreless {
+  display: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.text__box__moreless:hover {
+  text-decoration: underline;
+}
+
+.text__box__seemore {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.text__box__seemore:hover {
+  text-decoration: underline;
+}
+
+.more__less {
+  -webkit-line-clamp: initial;
+}
+/*# sourceMappingURL=style.css.map */
